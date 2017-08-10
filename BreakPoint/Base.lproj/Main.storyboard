@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dws-8l-hK5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -140,6 +140,9 @@
                                                 <state key="normal" title="LOGIN WITH FB">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="facebookSignInBtnWasPressed:" destination="dws-8l-hK5" eventType="touchUpInside" id="RQ9-NB-dYa"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCV-CF-baY">
                                                 <rect key="frame" x="0.0" y="139" width="303" height="59.5"/>
@@ -147,6 +150,9 @@
                                                 <state key="normal" title="LOGIN WITH G+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="googleSignInBtnWasPressed:" destination="dws-8l-hK5" eventType="touchUpInside" id="Bb0-bG-oRZ"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zie-a0-PkG">
                                                 <rect key="frame" x="0.0" y="208.5" width="303" height="59.5"/>
@@ -165,6 +171,9 @@
                                         <state key="normal" title=" by email" image="emailIcon">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInWithEmailBtnWasPressed:" destination="dws-8l-hK5" eventType="touchUpInside" id="2S9-xF-uR0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25490196078431371" green="0.27058823529411763" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
@@ -196,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="koD-52-FDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1626" y="0.0"/>
+            <point key="canvasLocation" x="-1670" y="0.0"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="eNp-Bn-yMP">
@@ -217,6 +226,9 @@
                                     <constraint firstAttribute="height" constant="30" id="j7g-oh-4Uc"/>
                                 </constraints>
                                 <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closeBtnWasPressed:" destination="VY4-Bn-jCx" eventType="touchUpInside" id="nRW-lM-b4P"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVI-zJ-wTF">
                                 <rect key="frame" x="147" y="259" width="80" height="33"/>
@@ -227,6 +239,9 @@
                                 <state key="normal" title="SIGN IN">
                                     <color key="titleColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInBtnWasPressed:" destination="VY4-Bn-jCx" eventType="touchUpInside" id="3mL-E6-yVl"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MF1-HE-htg">
                                 <rect key="frame" x="36" y="78" width="303" height="161"/>
@@ -271,10 +286,14 @@
                             <constraint firstItem="djn-aq-D45" firstAttribute="leading" secondItem="qdj-dF-5kM" secondAttribute="leadingMargin" id="y5w-2C-fSE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="ZGn-57-3GZ" id="wEn-Fh-phq"/>
+                        <outlet property="passwordField" destination="b86-vH-OJ6" id="Ngs-vP-2QU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SkG-XL-r1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-847.20000000000005" y="-0.44977511244377816"/>
+            <point key="canvasLocation" x="-852" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
