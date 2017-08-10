@@ -20,6 +20,7 @@
 		0088FE6D1F3C805B00D4DECD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0088FE6C1F3C803E00D4DECD /* GoogleService-Info.plist */; };
 		0088FE6F1F3C81D800D4DECD /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0088FE6E1F3C81D800D4DECD /* ShadowView.swift */; };
 		0088FE711F3CA8B900D4DECD /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0088FE701F3CA8B900D4DECD /* AuthServices.swift */; };
+		0088FE731F3CBE3700D4DECD /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0088FE721F3CBE3700D4DECD /* MeVC.swift */; };
 		97F21A8A3509DFC3920BA3A8 /* Pods_BreakPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D494E0ACD185965B0C8CC78 /* Pods_BreakPoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		0088FE6C1F3C803E00D4DECD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0088FE6E1F3C81D800D4DECD /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		0088FE701F3CA8B900D4DECD /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		0088FE721F3CBE3700D4DECD /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		0B9B947E080B6986CD1A8C4D /* Pods-BreakPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreakPoint/Pods-BreakPoint.release.xcconfig"; sourceTree = "<group>"; };
 		2D494E0ACD185965B0C8CC78 /* Pods_BreakPoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakPoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EB75AEB45EA70676151F05 /* Pods-BreakPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakPoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreakPoint/Pods-BreakPoint.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				004DF0AB1F3C721000028171 /* GroupsVC.swift */,
 				0088FE661F3C7EB900D4DECD /* AuthVC.swift */,
 				0088FE681F3C7EC500D4DECD /* LoginVC.swift */,
+				0088FE721F3CBE3700D4DECD /* MeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0088FE731F3CBE3700D4DECD /* MeVC.swift in Sources */,
 				0088FE671F3C7EB900D4DECD /* AuthVC.swift in Sources */,
 				0088FE691F3C7EC500D4DECD /* LoginVC.swift in Sources */,
 				004DF0AC1F3C721000028171 /* GroupsVC.swift in Sources */,
