@@ -495,7 +495,7 @@
         <!--Group FeedVC-->
         <scene sceneID="cMa-ym-Z8f">
             <objects>
-                <viewController id="ctT-A7-6TL" customClass="GroupFeedVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupFeedVC" id="ctT-A7-6TL" customClass="GroupFeedVC" customModule="BreakPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="haU-bB-tbx"/>
                         <viewControllerLayoutGuide type="bottom" id="fyR-Ra-Y6x"/>
@@ -507,7 +507,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3B-yk-pkJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="_grouptitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSe-wh-Nkg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_grouptitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSe-wh-Nkg">
                                         <rect key="frame" x="88" y="35" width="200" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Bcr-Ly-KkB"/>
@@ -517,7 +517,7 @@
                                         <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZA-Ro-JM8">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZA-Ro-JM8">
                                         <rect key="frame" x="20" y="34.5" width="12" height="22"/>
                                         <state key="normal" image="backIcon"/>
                                         <connections>
@@ -531,6 +531,7 @@
                                     <constraint firstAttribute="height" constant="70" id="W5o-rq-YK4"/>
                                     <constraint firstItem="FSe-wh-Nkg" firstAttribute="centerY" secondItem="ZZA-Ro-JM8" secondAttribute="centerY" id="Za1-Iq-w3K"/>
                                     <constraint firstItem="ZZA-Ro-JM8" firstAttribute="leading" secondItem="D3B-yk-pkJ" secondAttribute="leading" constant="20" id="gLx-5M-0dB"/>
+                                    <constraint firstItem="ZZA-Ro-JM8" firstAttribute="top" secondItem="D3B-yk-pkJ" secondAttribute="top" constant="34.5" id="spw-RE-Wbd"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vjl-bZ-LZ9">
@@ -590,12 +591,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@breakpoint.com, user2@breakpoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="cmx-Bb-ePp">
-                                <rect key="frame" x="0.0" y="78" width="375" height="16.5"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
-                                <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMd-6g-Of4">
                                 <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                                 <subviews>
@@ -630,6 +625,12 @@
                                     <constraint firstItem="bXf-T3-gs7" firstAttribute="leading" secondItem="0dJ-fc-H6N" secondAttribute="trailing" constant="8" id="kSR-WG-4J8"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@breakpoint.com, user2@breakpoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="cmx-Bb-ePp">
+                                <rect key="frame" x="16" y="78" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -638,14 +639,14 @@
                             <constraint firstItem="fyR-Ra-Y6x" firstAttribute="top" secondItem="XMd-6g-Of4" secondAttribute="bottom" id="6Jk-Uq-Haf"/>
                             <constraint firstItem="vjl-bZ-LZ9" firstAttribute="top" secondItem="cmx-Bb-ePp" secondAttribute="bottom" constant="8" id="82H-pW-an7"/>
                             <constraint firstItem="vjl-bZ-LZ9" firstAttribute="leading" secondItem="wfl-kw-3c6" secondAttribute="leading" id="Dck-lL-nq8"/>
-                            <constraint firstAttribute="trailing" secondItem="cmx-Bb-ePp" secondAttribute="trailing" id="GEZ-lr-CaI"/>
+                            <constraint firstItem="cmx-Bb-ePp" firstAttribute="leading" secondItem="wfl-kw-3c6" secondAttribute="leadingMargin" id="Hgr-Fn-T6s"/>
                             <constraint firstAttribute="trailing" secondItem="D3B-yk-pkJ" secondAttribute="trailing" id="N9i-61-16X"/>
                             <constraint firstItem="fyR-Ra-Y6x" firstAttribute="top" secondItem="vjl-bZ-LZ9" secondAttribute="bottom" id="URH-yb-pLd"/>
                             <constraint firstItem="XMd-6g-Of4" firstAttribute="leading" secondItem="wfl-kw-3c6" secondAttribute="leading" id="ZfX-Pa-ctD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cmx-Bb-ePp" secondAttribute="trailing" id="dAD-33-jAP"/>
                             <constraint firstItem="D3B-yk-pkJ" firstAttribute="top" secondItem="wfl-kw-3c6" secondAttribute="top" id="dxO-vD-oM4"/>
                             <constraint firstItem="D3B-yk-pkJ" firstAttribute="leading" secondItem="wfl-kw-3c6" secondAttribute="leading" id="gcV-Bm-lwZ"/>
                             <constraint firstAttribute="trailing" secondItem="XMd-6g-Of4" secondAttribute="trailing" id="qE6-sJ-PRs"/>
-                            <constraint firstItem="cmx-Bb-ePp" firstAttribute="leading" secondItem="wfl-kw-3c6" secondAttribute="leading" id="qaY-05-mXx"/>
                         </constraints>
                     </view>
                     <connections>
